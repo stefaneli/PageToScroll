@@ -16,8 +16,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         var contentWith: CGFloat = 0.0
+        
+        let scrolWidth = scrolView.frame.size.width
         
         for x in 0...2 {
             let image = UIImage(named: "icon\(x).png")
@@ -26,17 +31,19 @@ class ViewController: UIViewController {
             
             var newX: CGFloat = 0.0
             
-            newX = view.frame.midX + view.frame.size.width * CGFloat(x)
+            print("Scrollvie with: \(scrolView.frame.size.width)")
+            
+            newX = scrolWidth / 2 + scrolWidth * CGFloat(x)
             
             contentWith += newX
             
             scrolView.addSubview(imageView)
             
-            imageView.frame = CGRect(x: newX - 40, y: (view.frame.size.height / 2) - 40, width: 80, height: 80)
+            imageView.frame = CGRect(x: newX - 40, y: (scrolView.frame.size.height / 2) - 40, width: 150, height: 150)
         }
         
+        scrolView.clipsToBounds = false
         scrolView.contentSize = CGSize(width: contentWith, height: view.frame.size.height)
-        
     }
 
 
