@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             
             scrolView.addSubview(imageView)
             
-            imageView.frame = CGRect(x: newX - 40, y: (scrolView.frame.size.height / 2) - 40, width: 150, height: 150)
+            imageView.frame = CGRect(x: newX - 75, y: (scrolView.frame.size.height / 2) - 75, width: 150, height: 150)
         }
         
         scrolView.clipsToBounds = false

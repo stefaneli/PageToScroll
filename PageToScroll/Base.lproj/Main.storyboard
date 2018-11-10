@@ -34,22 +34,24 @@
                                     <constraint firstAttribute="height" constant="200" id="WHb-J7-R1x"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njt-5S-x0F">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njt-5S-x0F">
+                                <rect key="frame" x="58" y="0.0" width="260" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="3c1-ZO-BcW"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Io-E9-lpk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4ae-Je-EhD"/>
                             <constraint firstItem="njt-5S-x0F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Qq-jZ-IJi"/>
+                            <constraint firstItem="njt-5S-x0F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="74e-6h-Wzm"/>
                             <constraint firstItem="njt-5S-x0F" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="79R-M6-nfe"/>
                             <constraint firstItem="6Io-E9-lpk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9cD-nx-RXs"/>
                             <constraint firstItem="a9l-ry-CrA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HXs-ml-ZHl"/>
-                            <constraint firstItem="njt-5S-x0F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LOW-V6-Q6p"/>
                             <constraint firstItem="a9l-ry-CrA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="apF-BS-goh"/>
                             <constraint firstItem="E4a-uH-0vU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f4w-L9-WJb"/>
                             <constraint firstItem="a9l-ry-CrA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hfm-48-yt3"/>
-                            <constraint firstItem="njt-5S-x0F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ltO-bd-vQg"/>
                             <constraint firstItem="E4a-uH-0vU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="mL1-Ht-434"/>
                             <constraint firstItem="a9l-ry-CrA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rxn-mh-cFS"/>
                             <constraint firstItem="6Io-E9-lpk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sPb-BZ-jSm"/>
